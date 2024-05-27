@@ -248,7 +248,7 @@ class Net(nn.Module):
     
 
 # create a validation set
-for layer_number in range(0,1):
+for layer_number in range(3,4):
     model=Net(layer_number,input_size,class_num,binary_w,binary_a)
     print(model)
     model.to(device)
