@@ -20,7 +20,8 @@ class Binarize(InplaceFunction):
         scale= output.abs().mean() if allow_scale else 1 #from xnornet
         ctx.save_for_backward(input) #from binarynet
         if quant_mode=='det':
-            return output.div(scale).sign().mul(scale)
+            return output.sign().mul(scale)
+            #return output.div(scale).sign().mul(scale)
         else:
             return output.div(scale).add_(1).div_(2).add_(torch.rand(output.size()).add(-0.5)).clamp_(0,1).round().mul_(2).add_(-1).mul(scale)
 
