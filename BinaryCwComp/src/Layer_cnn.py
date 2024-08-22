@@ -198,7 +198,7 @@ class Conv_Layer(nn.Conv2d):
     def ff_infer(self, x):
 
         # Forward Pass
-        x = self._conv_forward(x, self.weight, self.bias)
+        x = self._conv_forward(x, binarized(self.weight), binarized(self.bias))
         x = F.relu(x, inplace=True)
         if self.ismaxpool:
             x = self.maxpool(x)
