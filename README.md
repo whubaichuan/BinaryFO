@@ -1,21 +1,21 @@
-# BinaryFO: Binary Forward-Only Algorithms
+# Binary Forward-Only Algorithms
 
-This repository provides the reproducible code for all the reported results in the paper **BinaryFO: Binary Forward-Only Algorithms**.
+This repository provides the reproducible code for all the reported results in the paper **Binary Forward-Only Algorithms**.
 
 
-The codes for binary version of the state-of-the-art forward-only algorithms are provided, including Binary-PEPITA<sup>[1]</sup>, Binary-FF<sup>[2]</sup> and Binary-BP<sup>[3]</sup> on MNIST, CIFAR-10, [MIT-MIT](https://www.physionet.org/content/mitdb/1.0.0/) datastes. 
+The codes for binary version of the state-of-the-art forward-only algorithms are provided, including PEPITA<sup>[1]</sup>, FF<sup>[2]</sup> and BP<sup>[3]</sup> on MNIST, CIFAR-10, [MIT-MIT](https://www.physionet.org/content/mitdb/1.0.0/) datastes. 
 
 
 The codes are shown as follows:
-- Binary-BP: ``python BinaryBP/Main.py ``
-- Binary-PEPITA: ``python BinaryPEPITA/pepita.py ``
-- Binary-FF: ``python BinaryFF/main.py ``
+- BP with binarization: ``python BinaryBP/Main.py ``
+- PEPITA with binarization: ``python BinaryPEPITA/pepita.py ``
+- FF with bbinarization: ``python BinaryFF/main.py ``
 
 > The parameters `dataset`, `binary_w` (binary weights) and `binary_a` (binary activations) need to be changed accordingly.
 
 ## Extension
 We extend to CwComp<sup>[4]</sup> on MNIST, CIFAR-10 to explore. The codes are shown as follows:
-- Binary-CwComp: ``python BinaryCwComp/src/main_train.py ``
+- CwComp with binarization: ``python BinaryCwComp/src/main_train.py ``
 ## References
 
 
