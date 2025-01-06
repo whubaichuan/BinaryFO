@@ -9,7 +9,7 @@ The codes for binary version of the state-of-the-art forward-only algorithms are
 The codes are shown as follows:
 - BP with binarization: ``python BinaryBP/Main.py ``
 - PEPITA with binarization: ``python BinaryPEPITA/pepita.py ``
-- FF with bbinarization: ``python BinaryFF/main.py ``
+- FF with binarization: ``python BinaryFF/main.py ``
 
 > The parameters `dataset`, `binary_w` (binary weights) and `binary_a` (binary activations) need to be changed accordingly.
 
