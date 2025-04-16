@@ -1,6 +1,8 @@
 # Binary Forward-Only Algorithms
 
 This repository provides the reproducible code for all the reported results in the paper **Binary Forward-Only Algorithms**.
+
+
 ![BinaryFO](./img/main.png)
 
 The codes for binary version of the state-of-the-art forward-only algorithms are provided, including PEPITA<sup>[1]</sup>, FF<sup>[2]</sup> and BP<sup>[3]</sup> on MNIST, CIFAR-10, [MIT-BIH](https://www.physionet.org/content/mitdb/1.0.0/) datastes. 
@@ -37,5 +39,5 @@ We extend to CwComp<sup>[4]</sup> on MNIST, CIFAR-10 to explore. The codes are s
   year={2025},
   publisher={IEEE},
   doi={10.1109/MDAT.2025.3528366}
-  }
+}
 ```
